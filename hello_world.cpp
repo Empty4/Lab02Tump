@@ -1,17 +1,10 @@
 #include <iostream>
 #include <string>
-using namespace std;
 
 int main() {
-    string name;
-    cout << "Enter your name: ";
-    cin >> name;
-    cout << "Hello world from " << name << endl;
-    return 0;
-}#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "Hello World!" << endl;
+    std::string name;
+    std::cout << "Enter your name: ";
+    std::getline(std::cin, name);
+    std::cout << "Hello " << (name.empty() ? "World" : "world from " + name) << "!" << std::endl;
     return 0;
 }
