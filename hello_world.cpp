@@ -8,3 +8,4 @@ int main() {
     std::cout << "Hello " << (name.empty() ? "World" : "world from " + name) << "!" << std::endl;
     return 0;
 }
+
